@@ -10,16 +10,29 @@
 
     <title>Docker PostgreSQL</title>
   </head>
-  <body>
+  <body class="bg-light">
     
 
-    <div class="container">
+    <div class="container bg-white">
       <div class="row">
         <div class="col"></div>
-        <div class="col-12 col-sm-8">
-          <h2>Empezamos con Docker y PostgreSQL</h2>
-          <p>Para emprezar este es un texto para explicar el primer tema</p>
-          <code>php artisan -S localhost:8080</code>
+        <div class="col-12 col-sm-10">
+          <h1>Docker & PostgreSQL</h1>
+          <h3 class="mt-5">Descargar la imagen de Docker</h3>
+          <p class="mt-3 mb-4">Todas las imagenes estan en el docker hub, y para bajar la imagen a nuestro computador solo debemos de escribir la siguiente sentencia en nuestra terminal</p>
+          
+          <pre class="code-custom bg-dark p-3 mt-3"><code class="text-white">docker pull postgress</code></pre>
+
+          <p class="mt-3 mb-4">Es muy importante tambien indicar con que version de postgress vamos a tranajar, y debemos de indicar la version para poder descargar la imagen correcta, por ejemplo si vamos a descargar la version <span>9.6</span> la sentencia sería la siguiente</p>
+          
+
+          <pre class="code-custom bg-dark p-3 mt-3"><code class="text-white">docker pull postgress:9.6</code></pre>
+
+          <figure class="figure mt-2">
+            <img src="img-docker-postgress/install-image.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure." width="300">
+          <figcaption class="figure-caption">Esto se ve mientras se instala</figcaption>
+          </figure>
+          
         </div>
         <div class="col"></div>
       </div>
