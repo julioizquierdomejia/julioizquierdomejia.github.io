@@ -59,43 +59,25 @@
                         </div>
                         <div class="col-12 col-sm-10">
                             <h1 class="mt-4">
-                                Instalación de Laravel
+                                Implementación de la autentificación
                             </h1>
                             <h3 class="mt-5">
-                                01. Crear Proyecto
+                                01. Ejecutar el comando make:auth
                             </h3>
                             <p class="mt-3 mb-4 text-secondary">
-                                Para crear un proyecto en laravel corre el siguiente comando, en este caso <span>blog</span> es el nombre del proyecto de muestra
+                                Para poder crear todo lo necesario para la autentificación de Laravel debemos correr el siguiente comando
                             </p>
-                            <pre class="code-custom bg-dark p-3 mt-3"><code class="text-danger">% composer create-project --prefer-dist laravel/laravel blog</code></pre>
+                            <pre class="code-custom bg-dark p-3 mt-3"><code class="text-danger">% cphp artisan make:auth</code></pre>
                             <p class="mt-3 mb-4 text-secondary">
-                                Para poder lanzar un servidor y poder tener una vista de proyecto, nos vamos a valer de <code>php artisan</code> con el siguiente comando
+                                Sin embargo, en Laravel 6 cuando ejecutamos el comando php artisan make:auth nos dice que el comando no está definido (Command «make:auth» is not defined). Así que en este tutorial hablaremos con detalle de este cambio en el framework y cómo podemos volver a tener esta funcionalidad en la aplicación.
                             </p>
-                            <pre class="code-custom bg-dark p-3 mt-3"><code class="text-danger">% ph artisan serve</code></pre>
                             <p class="mt-3 mb-4 text-secondary">
-                                En la terminal deberíamos ver lo siguiente
+                                A partir de Laravel 6 no decidirá por ti con cuál pre-procesador y framework de Javascript y CSS trabajar en tu aplicación. Es por ello que fue movida toda la funcionalidad para el frontend (scaffolding) que venía por defecto (Bootstrap y Vue) en el framework a un nuevo paquete Composer oficial llamado laravel/ui.
                             </p>
-
-                            <figure class="figure mt-2">
-                                <img alt="A generic square placeholder image with rounded corners in a figure." class="figure-img img-fluid rounded" src="images/phpartisan.png" width="420">
-                                    <figcaption class="figure-caption">
-                                        Esto se ve mientras se instala
-                                    </figcaption>
-                                </img>
-                            </figure>
-
-                            <p class="mt-3 mb-4 text-secondary">
-                                Como vemos nos crea un servidor local en el puerto 8000, solo vasta con ingresar en el navegador a <code> http://localhost:8000/ </code>
-                                y si todo esta bien en el navegador deberemos de ver los siguiente
+                            <p>
+                                Para volver a tener la funcionalidad vamos a instalar el nuevo paquete ejecutando:
                             </p>
-
-                            <figure class="figure mt-2">
-                                <img alt="A generic square placeholder image with rounded corners in a figure." class="figure-img img-fluid rounded" src="images/laravelwelcome.png" width="640">
-                                    <figcaption class="figure-caption">
-                                        Esto se ve mientras se instala
-                                    </figcaption>
-                                </img>
-                            </figure>
+                            <pre class="code-custom bg-dark p-3 mt-3"><code class="text-danger">% composer require laravel/ui</code></pre>
 
                         </div>
                         <div class="col">
