@@ -74,10 +74,27 @@
                             <p class="mt-3 mb-4 text-secondary">
                                 A partir de Laravel 6 no decidirá por ti con cuál pre-procesador y framework de Javascript y CSS trabajar en tu aplicación. Es por ello que fue movida toda la funcionalidad para el frontend (scaffolding) que venía por defecto (Bootstrap y Vue) en el framework a un nuevo paquete Composer oficial llamado laravel/ui.
                             </p>
-                            <p>
+                            <p class="mt-3 mb-4 text-secondary">
                                 Para volver a tener la funcionalidad vamos a instalar el nuevo paquete ejecutando:
                             </p>
                             <pre class="code-custom bg-dark p-3 mt-3"><code class="text-danger">% composer require laravel/ui</code></pre>
+                            <p class="mt-3 mb-4 text-secondary">
+                                Con ellos ya tendremos disponible los comandos Artisan.
+                            </p>
+
+                            <p class="mt-3 mb-4 text-secondary">
+                                Para agrega la configuración básica solo tenemos que ejecutar uno de estos 3 comandos:
+                            </p>
+                            <pre class="code-custom bg-dark p-3 mt-3"><code class="text-danger">% php artisan ui bootstrap</code></pre>
+                            <pre class="code-custom bg-dark p-3 mt-3"><code class="text-danger">% php artisan ui vue</code></pre>
+                            <pre class="code-custom bg-dark p-3 mt-3"><code class="text-danger">% php artisan ui react</code></pre>
+
+                            <p class="mt-3 mb-4 text-secondary">
+                                Para agregar la configuración básica incluyendo las vistas para registro y autenticación de usuarios, debemos indicar la opción de <span>--auth</span> al comando correspondiente:
+                            </p>
+                            <pre class="code-custom bg-dark p-3 mt-3"><code class="text-danger">% php artisan ui bootstrap --auth</code></pre>
+                            <pre class="code-custom bg-dark p-3 mt-3"><code class="text-danger">% php artisan ui vue --auth</code></pre>
+                            <pre class="code-custom bg-dark p-3 mt-3"><code class="text-danger">% php artisan ui react --auth</code></pre>
 
                         </div>
                         <div class="col">
