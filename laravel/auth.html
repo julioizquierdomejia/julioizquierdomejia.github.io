@@ -95,7 +95,24 @@
                             <pre class="code-custom bg-dark p-3 mt-3"><code class="text-danger">% php artisan ui bootstrap --auth
 % php artisan ui vue --auth
 % php artisan ui react --auth</code></pre>
+                            <p class="mt-3 mb-4 text-secondary">
+                                Esta es solo una configuración básica que puedes modificarla según las necesidades de tu proyecto, removiendo o agregando nuevos paquetes a tu archivo package.json
+                            </p>
+                            <p class="mt-3 mb-4 text-secondary">
+                                Luego, debes instalar los paquetes NPM con:
+                            </p>
+                            <pre class="code-custom bg-dark p-3 mt-3"><code class="text-danger">% npm install</code></pre>
                             
+                            <p class="mt-3 mb-4 text-secondary">
+                                Finalmente, a través de las instrucciones del archivo <span>webpack.mix.js Webpack</span> compilará tanto los archivos Sass para convertirlos a CSS plano así como el archivo <span>resources/js/app.js</span>, al ejecutar:    
+                            </p>
+                            <pre class="code-custom bg-dark p-3 mt-3"><code class="text-danger">% npm run dev</code></pre>
+
+                            <p class="mt-3 mb-4 text-secondary">
+                                Listo, volvemos a tener la funcionalidad en nuestra aplicación. La ventaja de esta separación a un paquete Composer es abrir la posibilidad de algún momento tener diferentes opciones de frontend para nuestros proyectos sin necesidad de actualizar el framework completo. ¡Ojala!, Jajajaja.
+                            </p>
+                            
+
                         </div>
                         <div class="col">
                         </div>
