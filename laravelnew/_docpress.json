@@ -1,0 +1,107 @@
+{
+  "toc": {
+    "sections": [
+      {
+        "title": "docpress",
+        "source": "README.md",
+        "url": "index.html",
+        "slug": "index"
+      },
+      {
+        "title": "Showcase",
+        "source": "docs/showcase.md",
+        "url": "showcase.html",
+        "slug": "showcase",
+        "headings": [
+          {
+            "title": "Project sites",
+            "depth": 2,
+            "id": "project-sites"
+          },
+          {
+            "title": "Books and manuals",
+            "depth": 2,
+            "id": "books-and-manuals"
+          }
+        ]
+      },
+      {
+        "title": "Creación de Proyectos",
+        "sections": [
+          {
+            "title": "Crear Proyecto",
+            "source": "docs/instalacion/instalacion.md",
+            "url": "instalacion/instalacion.html",
+            "slug": "instalacioninstalacion"
+          },
+          {
+            "title": "Autentificación",
+            "source": "docs/instalacion/autentificacion.md",
+            "url": "instalacion/autentificacion.html",
+            "slug": "instalacionautentificacion",
+            "headings": [
+              {
+                "title": "Ejecutar el comando make:auth",
+                "depth": 2,
+                "id": "ejecutar-el-comando-make:auth"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "index": {
+    "index.html": {
+      "source": "README.md",
+      "title": "docpress",
+      "pageTitle": "docpress",
+      "slug": "index"
+    },
+    "showcase.html": {
+      "source": "docs/showcase.md",
+      "title": "Showcase - docpress",
+      "pageTitle": "Showcase",
+      "slug": "showcase",
+      "headings": [
+        {
+          "title": "Project sites",
+          "depth": 2,
+          "id": "project-sites"
+        },
+        {
+          "title": "Books and manuals",
+          "depth": 2,
+          "id": "books-and-manuals"
+        }
+      ]
+    },
+    "instalacion/instalacion.html": {
+      "source": "docs/instalacion/instalacion.md",
+      "title": "Crear Proyecto - docpress",
+      "pageTitle": "Crear Proyecto",
+      "slug": "instalacioninstalacion"
+    },
+    "instalacion/autentificacion.html": {
+      "source": "docs/instalacion/autentificacion.md",
+      "title": "Autentificación - docpress",
+      "pageTitle": "Autentificación",
+      "slug": "instalacionautentificacion",
+      "headings": [
+        {
+          "title": "Ejecutar el comando make:auth",
+          "depth": 2,
+          "id": "ejecutar-el-comando-make:auth"
+        }
+      ]
+    }
+  },
+  "sources": {
+    "README.md": "index.html",
+    "docs/showcase.md": "showcase.html",
+    "docs/instalacion/instalacion.md": "instalacion/instalacion.html",
+    "docs/instalacion/autentificacion.md": "instalacion/autentificacion.html",
+    "docs/docpress.json": "docpress.json",
+    "docs/assets/custom.css": "assets/custom.css"
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=90051322">
+    <link rel="stylesheet" href="http://ricostacruz.com/docpress-rsc/style.css">
+    <link rel="stylesheet" href="../assets/custom.css?t=202a34cf">
+    <script src="../assets/script.js?t=93f1a66c"></script>
+    <title>Crear Proyecto - docpress</title>
+    <meta name="viewport" content="width=device-width">
+    <script>if (false || window.location.hostname.indexOf("docpress.github.io") === window.location.hostname.length - 18) {
+        (function(d,o,c,p,r,e,s){d['GoogleAnalyticsObject']=r;d[r]=d[r]||function(){(d[r].q=d[r].q||[]).push(arguments)},d[r].l=1*new Date();e=o.createElement(c),s=o.getElementsByTagName(c)[0];e.async=1;e.src=p;s.parentNode.insertBefore(e,s)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create',"UA-70057942-1",'auto')
+      }
+    </script>
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <ul>
+          <li class="menu-item -level-0 -parent">
+            <ul class="submenu">
+              <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">docpress</a>
+              </li>
+              <li class="menu-item -level-1"><a class="link title  link-showcase" href="../showcase.html">Showcase</a>
+              </li>
+              <li class="menu-item -level-1 -parent"><span class="title">Creación de Proyectos</span>
+                <ul class="submenu">
+                  <li class="menu-item -level-2"><a class="link title -active link-instalacioninstalacion" href="../instalacion/instalacion.html">Crear Proyecto</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-instalacionautentificacion" href="../instalacion/autentificacion.html">Autentificación</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="body page-instalacioninstalacion">
+        <div class="header-nav">
+          <div class="right"><a class="iconlink" href="https://github.com/docpress/docpress" data-title="docpress/docpress">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="01.-crear-proyecto">01. Crear Proyecto</h1>
+<p>Para crear un proyecto en laravel corre el siguiente comando, en este caso blog es el nombre del proyecto de muestra</p>
+<pre><code class="lang-sh">composer create-project --prefer-dist laravel/laravel nombre_del_proyecto
+</code></pre>
+<p>Donde nombre_del_proyecto es el nombre que le quieres colocar a tu proyecto</p>
+<p>Para poder lanzar un servidor y poder tener una vista de proyecto, nos vamos a valer de php artisan con el siguiente comando</p>
+<pre><code>php artisan serve
+</code></pre>
+<blockquote>
+<p><img src="https://julioizquierdomejia.github.io/laravel_old/images/phpartisan.png" alt></p>
+</blockquote>
+<p>Esto se ve mientras se instala</p>
+<p>Como vemos nos crea un servidor local en el puerto 8000, solo vasta con ingresar en el navegador a <a href="http://localhost:8000/">http://localhost:8000/</a> y si todo esta bien en el navegador deberemos de ver los siguiente</p>
+<blockquote>
+<p><img src="https://julioizquierdomejia.github.io/laravel_old/images/laravelwelcome.png" alt></p>
+</blockquote>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../showcase.html"><span class="title">Showcase</span></a></div>
+          <div class="right"><a href="../instalacion/autentificacion.html"><span class="label">Next: </span><span class="title">Autentificación</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

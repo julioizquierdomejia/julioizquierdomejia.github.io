@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=90051322">
+    <link rel="stylesheet" href="http://ricostacruz.com/docpress-rsc/style.css">
+    <link rel="stylesheet" href="../assets/custom.css?t=202a34cf">
+    <script src="../assets/script.js?t=93f1a66c"></script>
+    <title>Autentificación - docpress</title>
+    <meta name="viewport" content="width=device-width">
+    <script>if (false || window.location.hostname.indexOf("docpress.github.io") === window.location.hostname.length - 18) {
+        (function(d,o,c,p,r,e,s){d['GoogleAnalyticsObject']=r;d[r]=d[r]||function(){(d[r].q=d[r].q||[]).push(arguments)},d[r].l=1*new Date();e=o.createElement(c),s=o.getElementsByTagName(c)[0];e.async=1;e.src=p;s.parentNode.insertBefore(e,s)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create',"UA-70057942-1",'auto')
+      }
+    </script>
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <ul>
+          <li class="menu-item -level-0 -parent">
+            <ul class="submenu">
+              <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">docpress</a>
+              </li>
+              <li class="menu-item -level-1"><a class="link title  link-showcase" href="../showcase.html">Showcase</a>
+              </li>
+              <li class="menu-item -level-1 -parent"><span class="title">Creación de Proyectos</span>
+                <ul class="submenu">
+                  <li class="menu-item -level-2"><a class="link title  link-instalacioninstalacion" href="../instalacion/instalacion.html">Crear Proyecto</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title -active link-instalacionautentificacion" href="../instalacion/autentificacion.html">Autentificación</a>
+                    <ul class="headings heading-list">
+                      <li class="heading-item -depth-2"><a class="hlink link-ejecutar-el-comando-make:auth" href="#ejecutar-el-comando-make:auth">Ejecutar el comando make:auth</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="body page-instalacionautentificacion">
+        <div class="header-nav">
+          <div class="right"><a class="iconlink" href="https://github.com/docpress/docpress" data-title="docpress/docpress">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="implementacion-de-la-autentificacion">Implementaci&#xF3;n de la autentificaci&#xF3;n</h1>
+<h2 id="ejecutar-el-comando-make:auth">Ejecutar el comando make:auth</h2>
+<p>Para poder crear todo lo necesario para la autentificaci&#xF3;n de Laravel debemos correr el siguiente comando</p>
+<pre><code>php artisan make:auth
+</code></pre>
+<p>Sin embargo, apartir de Laravel 6 para arriba, cuando ejecutamos el comando php artisan make:auth nos dice que el comando no est&#xE1; definido <strong>(Command &#xAB;make:auth&#xBB; is not defined)</strong>. As&#xED; que en este tutorial hablaremos con detalle de este cambio en el framework y c&#xF3;mo podemos volver a tener esta funcionalidad en la aplicaci&#xF3;n.</p>
+<p>A partir de Laravel 6 no decidir&#xE1; por ti con cu&#xE1;l pre-procesador y framework de Javascript y CSS trabajar en tu aplicaci&#xF3;n. Es por ello que fue movida toda la funcionalidad para el frontend <strong>(scaffolding)</strong> que ven&#xED;a por defecto (Bootstrap y Vue) en el framework a un nuevo paquete Composer oficial llamado laravel/ui.</p>
+<p>Para volver a tener la funcionalidad vamos a instalar el nuevo paquete ejecutando:</p>
+<pre><code>composer require laravel/ui
+</code></pre>
+<p>Con ellos ya tendremos disponible los comandos Artisan.</p>
+<p>Para agrega la configuraci&#xF3;n b&#xE1;sica solo tenemos que ejecutar uno de estos 3 comandos:</p>
+<pre><code>php artisan ui bootstrap
+php artisan ui vue
+php artisan ui react
+</code></pre>
+<p>Para agregar la configuraci&#xF3;n b&#xE1;sica incluyendo las vistas para registro y autenticaci&#xF3;n de usuarios, debemos indicar la opci&#xF3;n de --auth al comando correspondiente:</p>
+<pre><code>php artisan ui bootstrap --auth
+php artisan ui vue --auth
+php artisan ui react --auth
+</code></pre>
+<p>Esta es solo una configuraci&#xF3;n b&#xE1;sica que puedes modificarla seg&#xFA;n las necesidades de tu proyecto, removiendo o agregando nuevos paquetes a tu archivo package.json</p>
+<p>Luego, debes instalar los paquetes NPM con:</p>
+<pre><code>npm install
+</code></pre>
+<p>Finalmente, a trav&#xE9;s de las instrucciones del archivo webpack.mix.js Webpack compilar&#xE1; tanto los archivos Sass para convertirlos a CSS plano as&#xED; como el archivo resources/js/app.js, al ejecutar:</p>
+<pre><code>npm run dev
+</code></pre>
+<p>Listo, volvemos a tener la funcionalidad en nuestra aplicaci&#xF3;n. La ventaja de esta separaci&#xF3;n a un paquete Composer es abrir la posibilidad de alg&#xFA;n momento tener diferentes opciones de frontend para nuestros proyectos sin necesidad de actualizar el framework completo. &#xA1;Ojala!, Jajajaja.</p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../instalacion/instalacion.html"><span class="title">Crear Proyecto</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
