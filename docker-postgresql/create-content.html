@@ -74,7 +74,7 @@
                                   
                                   <li>Cuando queremos accesder a nuestro contenedor para iniciarlo, detenerlo o eliminarlo, debemos de hacer referencia a dicho contenedor por medio de un ID que es creado automáticamente por docker y un ID bastante dificil de recordar, asi que se recomienda asignarle un nombre a dicho contenedor de con la siguiente bandera <span>flag</span> seguido del nombre, en mi caso de ejempo le colocaré de nombre postgresql <code>--name postgresql</code></li>
                                   
-                                  <li>Cuando creamos una base de datos, los registros quedan en el contenedor, y cuando en el futuro se destruya ese contenedor, o simplemente se detenga ese contenedor, los datos que se guardaron en la base de datos de ese contenedor tambien se perderan, es por ese motivo que se recomienda guardar la informacion de la base de datos de dicho contenedor en su maquina en alguna carpeta que ustedes decidan, esto se hace con la bandera <span>flag</span> -v <span>que significa Volumen</span><code> -v la-carpeta-del-sistema:la-carpeta-contenedora </code> <span>La carpeta del sistema</span> es una que este en sus computadoras en donde se va a sincronizar los datos, y <span>La carpeta contenedora es donde se guardan los datos dentro del contenedor y es aqui -->> <code> var/lib/posgresql/data </code></span></li>
+                                  <li>Cuando creamos una base de datos, los registros quedan en el contenedor, y cuando en el futuro se destruya ese contenedor, o simplemente se detenga ese contenedor, los datos que se guardaron en la base de datos de ese contenedor tambien se perderan, es por ese motivo que se recomienda guardar la informacion de la base de datos de dicho contenedor en su maquina en alguna carpeta que ustedes decidan, esto se hace con la bandera <span>flag</span> -v <span>que significa Volumen</span><code> -v la-carpeta-del-sistema:la-carpeta-contenedora </code> <span>La carpeta del sistema</span> es una que este en sus computadoras en donde se va a sincronizar los datos, y <span>La carpeta contenedora es donde se guardan los datos dentro del contenedor y es aqui -->> <code> /var/lib/posgresql/data </code></span></li>
 
                                   <li>Ahora con la bandera <span>flag</span> <code> -e</code> se crea una variable de entorno para el Pasword de la siguiente manera <code> -e POSTGRES_PASWORD=secret </code> en lugar de <span>secret uds coloquen una contraseña realmente segura</span></li>
 
@@ -83,7 +83,7 @@
                                   <li>Finalmente colocamos el nombre de la imagen desde la cual vamos a crear nuestro contenedor</li>
                                 </ul>
                             </p>
-                            <pre class="code-custom bg-dark p-3 mt-3"><code class="text-danger">% docker run -p 5432:5432 --name postgresql -v MiRutaDeMicompu:var/lib/posgresql/data -e POSTGRES_PASSWORD=secret -d postgresql</code></pre>
+                            <pre class="code-custom bg-dark p-3 mt-3"><code class="text-danger">% docker run -p 5432:5432 --name postgresql -v MiRutaDeMicompu:/var/lib/posgresql/data -e POSTGRES_PASSWORD=secret -d postgresql</code></pre>
 
                         </div>
                         <div class="col">

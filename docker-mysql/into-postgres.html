@@ -26,7 +26,7 @@
 
             Ocultar Menu
             </a>
-            <span class="text-white">Manual de Docker y PostgreSQL <a href="https://julioizquierdomejia.github.io/" class="btn btn-secondary ml-3">Home</a></span>
+            <span class="text-white">Manual de Docker y MySQL <a href="https://julioizquierdomejia.github.io/" class="btn btn-secondary ml-3">Home</a></span>
             
         </nav>
         <div id="wrapper">
@@ -45,7 +45,7 @@
                     </li>
                     <li>
                         <a href="into-postgres.html">
-                            03. Ingresar a Postgres
+                            03. Ingresar a MySQL
                         </a>
                     </li>
                 </ul>
@@ -59,16 +59,16 @@
                         </div>
                         <div class="col-12 col-sm-10">
                             <h1 class="mt-4">
-                                Docker & PostgreSQL
+                                Docker MySQL
                             </h1>
                             <h3 class="mt-5">
-                                03. Ingresando a Postgres
+                                03. Ingresando a MySQL
                             </h3>
                             
                             <p class="mt-3 mb-4 text-secondary">
-                                Un vez creado el contenedor necesitamos ingresar a Postgres para poder gestionar las base de datos, se realiza con la siguiente linea de comando <code>docker exec -it </code> seguido del nombre del contenedor <span>postgres</span> y luego se ejecuta el comando de postgres a ejecutar que es <code> psql </code> acontinuación la bandera <span class="badge badge-pill badge-secondary">Flag</span> <code> -U </code> y el usuario que en el caso de postgres es <code> potsgres </code> <span>parece trabalengüa verdad :)</span>, finalmente la linea de comando quedaría asi:
+                                Un vez creado el contenedor necesitamos ingresar a MySQL para poder gestionar las base de datos, se realiza con la siguiente linea de comando <code>docker exec -it </code> seguido del nombre del contenedor <span>mySQL</span> y luego se ejecuta el comando de MySQL a ejecutar que es <code> mysql </code> acontinuación la bandera <span class="badge badge-pill badge-secondary">Flag</span> <code> -u </code> y el usuario que en el caso de mySQL es <code> root </code> <span>parece trabalengüa verdad :)</span>, luego la bandera <span>-p</span>, para la contraseña, finalmente la linea de comando quedaría asi:
                             </p>
-                            <pre class="code-custom bg-dark p-3 mt-3"><code class="text-danger">% docker exec -it postgresql psql -U postgres</code></pre>
+                            <pre class="code-custom bg-dark p-3 mt-3"><code class="text-danger">% docker exec -it mysql -uroot -p</code></pre>
 
                             <p class="mt-3 mb-4 text-secondary">
                                 Para saber qe todo salió bien deberiamos de tener la siguiente vista en nuestra terminal
