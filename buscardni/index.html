@@ -54,13 +54,14 @@
 
         var dni = $('#eldni').val();
         $.getJSON('https://www.sigesin.conareme.org.pe/controlador/r3n13c.php?dni=' + dni, function(datos){
-        
+          
 
-          $('#data').append(
+          $('#data').html(
 
             '<p>Nombres</p><h3>'+ datos[0].nombres +'</h3><p>Apellidos</p><h4>'+ datos[0].apellido_paterno +' '+ datos[0].apellido_materno +'</h4><p>Dirección</p><h3>'+ datos[0].direccion +'</h3>'
 
           )
+
         })
 
 
