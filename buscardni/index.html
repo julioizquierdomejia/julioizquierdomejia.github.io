@@ -32,6 +32,11 @@
         <div class="col" id="data">
           
         </div>
+
+        <div class="col" id="todo">
+          
+        </div>
+
       </div>
 
     </div>
@@ -61,6 +66,14 @@
             '<p>Nombres</p><h3>'+ datos[0].nombres +'</h3><p>Apellidos</p><h4>'+ datos[0].apellido_paterno +' '+ datos[0].apellido_materno +'</h4><p>Dirección</p><h3>'+ datos[0].direccion +'</h3><p>Fecha de Emisión</p><h3>'+ datos[0].fecha_expedicion +'</h3>'
 
           )
+
+          $('#todo').html(
+
+            datos[0]
+
+          )
+
+
 
         })
 
