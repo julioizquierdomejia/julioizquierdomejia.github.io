@@ -1,0 +1,19 @@
+{
+  "name": "laravel-digital-ocean",
+  "version": "0.0.1",
+  "description": "Tutorial levantar laravel en digital ocean",
+  "main": "index.js",
+  "authors": {
+    "name": "JulioIzquierdoMejia",
+    "email": "julio.izquierdo.mejia@gmail.com"
+  },
+  "repository": "https://github.com/julioizquierdomejia/julioizquierdomejia.github.io.git/laravel-digital-ocean",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
